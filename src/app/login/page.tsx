@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, RevealFx, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
+import { Heading, SparkleFx, Input, Text, Flex, Button, RevealFx, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Login() {
 
 
 	return (
@@ -16,7 +16,6 @@ export default function Home() {
 
 			<Background
 				dots={false} />
-
 			<Flex
 				border="neutral-medium"
 				gap="24"
@@ -29,10 +28,10 @@ export default function Home() {
 				background="neutral-medium"
 			>
 				<Button
-					href='/login'
+					href='/'
 					variant="secondary"
 					size="m"
-					label="Login"
+					label="Home"
 				/>
 				<Button
 					href='/signup'
@@ -64,47 +63,35 @@ export default function Home() {
 
 
 							<Heading
-								wrap="balance"
 								variant="display-strong-s">
-								<span className="font-code">
-									<LetterFx
-										trigger="instant">
-										Michael Social Trading
-									</LetterFx>
-								</span>
+								Login
 							</Heading>
+
+
+							<Input
+								id="example"
+								label="Username"
+								value=""
+							/>
+							<Input
+								id="example"
+								label="Password"
+								value=""
+							/>
+							<Button
+								variant="primary"
+								size="m"
+								label="Submit"
+							/>
+
+
+
+
 							<Flex
 								fillWidth
 								direction="column"
 								paddingY="l" gap="m">
 							</Flex>
-
-
-							<RevealFx
-								speed="medium"
-								delay={0}
-								translateY={0}
-							>
-								<Flex
-									direction="column"
-									padding="24"
-									gap="8"
-								>
-									<Text variant="heading-strong-m">
-										Trade with Confidence and Precision
-									</Text>
-
-
-									<Button
-										href='/signup'
-
-										size="m">
-										Get Started
-									</Button>
-								</Flex>
-							</RevealFx>
-
-
 
 						</Flex>
 					</Flex>
